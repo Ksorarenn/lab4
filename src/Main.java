@@ -17,7 +17,7 @@ public class Main {
         int step = Array.length - 1;
         while(step >= 1){
             for(int i = 0;i + step < Array.length; ++i){
-                if (Array[i] > Array[i + step]){
+                if (Array[i] < Array[i + step]){
                     swap(Array, i, i + step);
                 }}
             step /= Factor;
